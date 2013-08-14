@@ -8,7 +8,17 @@ require.config({
     backbone: 'libs/backbone/backbone-min',
     mustache: 'libs/mustache/mustache',
     text: 'libs/text/text'
+  },
+  shim: {
+    underscore: {
+      exports: '_'
+    },
+    backbone: {
+      deps: ['jquery', 'underscore'],
+      exports: 'Backbone'
+    }
   }
+
 });
 
 require(['jquery', 'underscore', 'backbone', 'mustache'], function($, _, Backbone) {
