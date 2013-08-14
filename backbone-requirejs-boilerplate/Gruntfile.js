@@ -38,8 +38,8 @@ module.exports = function(grunt) {
           paths: {
             text: 'libs/text/text',
             jquery: 'libs/jquery/jquery',
-            underscore: 'libs/underscore-amd/underscore',
-            backbone: 'libs/backbone-amd/backbone',
+            underscore: 'libs/underscore/underscore-min',
+            backbone: 'libs/backbone/backbone-min',
             mustache: 'libs/mustache/mustache'
           }
         }
